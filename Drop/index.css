@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
+
+:root {
+	--startPosX: 120%;
+	--startPosY: -800%;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+svg {
+	position: absolute;
+}
+
+.wrapper {
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
+	background-color: #275EFE;
+}
+
+.container {
+	height: 200px;
+	width: 200px;
+	margin: 300px auto;
+	position: relative;
+	filter: url(#goo);
+}
+
+.container .text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-family: Anton;
+	font-size: 200px;
+	z-index: 999;
+	color: white;
+}
+
+.container .drop {
+	height: 30px;
+	width: 30px;
+	border-radius: 15px;
+	background-color: white;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(var(--startPosX), var(--startPosY)) scaleX(0.5);
+	animation: move 6s cubic-bezier(1, .04, .74, .2) infinite;
+}
+
+@keyframes move {
+	0% {
+		transform: translate(var(--startPosX), var(--startPosY)) scaleX(0.2);
+		height: 60px;
+	}
+
+	30% {
+		transform: translate(var(--startPosX), -200%);
+		height: 30px;
+	}
+
+	70% {
+		transform: translate(var(--startPosX), 100%);
+		height: 30px;
+	}
+
+	100% {
+		transform: translate(var(--startPosX), 800%) scaleX(0.2);
+		height: 60px;
+	}
+}
