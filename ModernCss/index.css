@@ -1,0 +1,17 @@
+.item {
+  font-size: min(1.75rem, 25px);
+  height: 30px;
+  background-color: hotpink;
+  display: grid;
+  place-content: center;
+  padding: 1.5rem clamp(1rem, 5%, 3rem);
+}
+.smol-css-grid {
+  --min: 15ch;
+  --gap: 1rem;
+
+  display: grid;
+  gap: var(--gap);
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--min)), 1fr));
+}
+

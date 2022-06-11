@@ -1,0 +1,102 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'iconfont';  /* Project id 2887530 */
+  src: url('//at.alicdn.com/t/font_2887530_12p094fp95rc.woff2?t=1639383963512') format('woff2'),
+       url('//at.alicdn.com/t/font_2887530_12p094fp95rc.woff?t=1639383963512') format('woff'),
+       url('//at.alicdn.com/t/font_2887530_12p094fp95rc.ttf?t=1639383963512') format('truetype');
+}
+
+:root {
+  --primary-color: #777;
+  --text-color: #555;
+  --secondary-color: #999;
+}
+
+body {
+  background-color: #f3f3f3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-color);
+}
+
+.notification {
+  display: grid;
+  width: 60%;
+  grid-template-columns: 50px 1fr;
+  gap: .75rem 1rem;
+}
+
+.notification .avatar {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.notification:not(:last-child) .avatar::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  margin: 0 auto;
+  background-color: var(--secondary-color);
+  z-index: -1;
+}
+
+.notification img {
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+.notification-card {
+  background-color: white;
+  border: 1px solid var(--primary-color);
+  border-radius: .25rem;
+  padding: .75rem;
+  margin-bottom: 1.25rem;
+}
+
+.notification-card .header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: .25rem;
+  gap: .25rem;
+}
+
+.notification .icon {
+  padding: 2px;
+}
+.notification .title {
+  flex-grow: 1;
+}
+
+.notification .icon {
+  font-family: 'iconfont';
+}
+
+.notification .icon::before {
+  content: '\e8ae';
+  color: var(--primary-color);
+}
+
+.notification .time {
+  color: var(--primary-color);
+}
+
+.notification .content {
+  background-color: #f3f3f3;
+  padding: .75rem;
+  margin-top: .5rem;
+  border-radius: .25rem;
+}

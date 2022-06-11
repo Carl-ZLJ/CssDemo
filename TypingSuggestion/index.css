@@ -1,0 +1,56 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  padding: 2rem 2rem max(2rem, 50vh);
+
+  color: hsl(0 100% 60% / 1);
+  font-family: "Patrick Hand", cursive;
+  font-size: clamp(2.5rem, 5vw + 0.5rem, 4rem);
+  background-image: url('data:image/svg+xml,%3Csvg width="52" height="26" viewBox="0 0 52 26" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%239C92AC" fill-opacity="0.4"%3E%3Cpath d="M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z" /%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
+  background-color: hsl(0 80% 85% / 1);
+  background-blend-mode: screen;
+}
+
+.ice-cream {
+  display: grid;
+  max-width: 100%;
+}
+
+.ice-cream > * {
+  width: 100%;
+}
+
+.ice-cream label {
+  margin-top: 5rem;
+  margin-bottom: 1rem;
+}
+
+.ice-cream input {
+  padding: 1rem 1.5rem;
+  border-radius: 0.25em;
+  font-size: 0.5em;
+  color: hsl(0 100% 40% / 1);
+  border: 5px solid hsl(0 40% 70% / 1);
+}
+
+.ice-cream ::placeholder {
+  color: hsl(0 40% 70% / 0.7);
+}
+
+#preference-scale {
+  display: flex;
+  justify-content: space-around;
+  font-size: 1rem;
+}
+
+#preference-scale option {
+  background: white;
+  padding: 1em;
+}
