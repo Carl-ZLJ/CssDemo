@@ -2,9 +2,8 @@
   "name": "cssdemo",
   "version": "1.0.0",
   "description": "cool effects I learned",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "tsc ./ParticlesBackground/index.ts --watch"
   },
   "repository": {
     "type": "git",
@@ -18,6 +17,8 @@
   },
   "homepage": "https://github.com/kaelzhu/CssDemo#readme",
   "devDependencies": {
-    "eslint": "^8.10.0"
+    "@typescript-eslint/parser": "^5.28.0",
+    "eslint": "^8.10.0",
+    "typescript": "^4.7.3"
   }
 }
