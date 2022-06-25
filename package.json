@@ -1,9 +1,9 @@
 {
   "name": "cssdemo",
   "version": "1.0.0",
-  "description": "cool effects I learned",
+  "description": "cool animations I learned",
   "scripts": {
-    "dev": "tsc ./ParticlesBackground/index.ts --watch"
+    "dev": "tsc ./Fireworks/index.ts --watch"
   },
   "repository": {
     "type": "git",
