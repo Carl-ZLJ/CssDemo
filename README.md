@@ -9,3 +9,4 @@ cool effects I learned
 - horizontal media scroll
 - particlesBackground
 - fireworks
+- card stack

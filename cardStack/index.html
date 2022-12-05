@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Card Stack</title>
+  </head>
+
+  <body>
+    <form>
+      <fieldset>
+        <legend>Transform Origin</legend>
+        <input id="mode-center" type="radio" name="stack-type" checked>
+        <label for="mode-center">center</label>
+        <input id="mode-bottom-center" type="radio" name="stack-type">
+        <label for="mode-bottom-center">bottom center</label>
+        <input id="mode-bottom-left" type="radio" name="stack-type">
+        <label for="mode-bottom-left">bottom left</label>
+        <input id="mode-top-left" type="radio" name="stack-type">
+        <label for="mode-top-left">top left</label>
+        <input id="mode-top-right" type="radio" name="stack-type">
+        <label for="mode-top-right">top right</label>
+        <input id="mode-bottom-right" type="radio" name="stack-type">
+        <label for="mode-bottom-right">bottom right</label>
+      </fieldset>
+      <fieldset>
+        <legend>Custom</legend>
+        <input id="mode-better-bottom-center" type="radio" name="stack-type">
+        <label for="mode-better-bottom-center">center 200%</label>
+        <input id="mode-better-top-left" type="radio" name="stack-type">
+        <label for="mode-better-top-left">-25% -25%</label>
+      </fieldset>
+      <fieldset>
+        <legend>Gap</legend>
+        <input type="range" id="slider" min="0" max="20" value="5">
+      </fieldset>
+    </form>
+    <div class="card-stack">
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+      <div class="card"></div>
+    </div>
+    <script src="index.js" type="module"></script>
+  </body>
+
+</html>
