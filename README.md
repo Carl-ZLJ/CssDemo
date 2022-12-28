@@ -7,6 +7,6 @@ cool effects I learned
 - modern css
 - dribble card
 - horizontal media scroll
-- particlesBackground
+- particles background
 - fireworks
 - card stack

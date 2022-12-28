@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Flag With Color Change Effect</title>
+  </head>
+
+  <body>
+
+    <canvas></canvas>
+    <script src="./math.js"></script>
+    <script src="./particle.js"></script>
+    <script src="./flag.js"></script>
+    <script src="./segment.js"></script>
+    <script>
+      const canvas = document.querySelector('canvas')
+      canvas.width = window.innerWidth
+      canvas.height = window.innerHeight
+      const ctx = canvas.getContext('2d')
+
+      const G = {
+        x: 0,
+        y: 0.1,
+      }
+      const W = {
+        x: 0.1,
+        y: 0,
+      }
+      const flag = new Flag()
+
+      setInterval(() => {
+        W.x = lerp(0.1, -0.1, Math.random())
+      }, 1000)
+
+      animation()
+
+      function animation() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height)
+        flag.update()
+        flag.draw(ctx)
+
+        requestAnimationFrame(animation)
+      }
+    </script>
+  </body>
+
+</html>
