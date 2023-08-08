@@ -1,4 +1,4 @@
-## CssDemo
+## Css Demo
 cool effects I learned
 
 - light saber
@@ -10,3 +10,6 @@ cool effects I learned
 - particles background
 - fireworks
 - card stack
+- diagram land page
+- lazy load image
+- dotted image
