@@ -35,14 +35,14 @@
         W.x = lerp(0.1, -0.1, Math.random())
       }, 1000)
 
-      animation()
+      animation(G, W)
 
-      function animation() {
+      function animation(G, W) {
         ctx.clearRect(0, 0, canvas.width, canvas.height)
-        flag.update()
+        flag.update(G, W)
         flag.draw(ctx)
 
-        requestAnimationFrame(animation)
+        requestAnimationFrame(animation.bind(null, G, W))
       }
     </script>
   </body>

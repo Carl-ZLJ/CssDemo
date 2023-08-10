@@ -45,9 +45,9 @@ class Flag {
     }
   }
 
-  update() {
+  update(G, W) {
     for (const particle of this.particles) {
-      particle.update()
+      particle.update(G, W)
     }
     for (const segment of this.segments) {
       segment.update()

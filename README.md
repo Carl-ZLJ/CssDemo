@@ -5,11 +5,11 @@ cool effects I learned
 - neo button
 - grid layout
 - modern css
-- dribble card
 - horizontal media scroll
 - particles background
 - fireworks
 - card stack
 - diagram land page
+- animated flag
 - lazy load image
 - dotted image
