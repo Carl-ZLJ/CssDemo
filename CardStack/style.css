@@ -3,7 +3,7 @@
 @import "card-stack.css" layer(demo);
 
 @layer design.system,
-demo.support;
+demo.support, demo;
 
 @layer demo.support {
   body {
