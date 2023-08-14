@@ -1,5 +1,6 @@
-@import "open-props/style" layer(design.system);
-@import "open-props/normalize" layer(demo.support);
+@import "https://unpkg.com/open-props" layer(design.system);
+
+@import "https://unpkg.com/open-props/normalize.min.css" layer(demo.support);
 @import "card-stack.css" layer(demo);
 
 @layer design.system,
