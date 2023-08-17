@@ -13,3 +13,4 @@ cool effects I learned
 - animated flag
 - lazy load image
 - dotted image
+- laser
