@@ -1,16 +1,19 @@
 # Css Demo
-cool effects I learned
+Cool effects
 
-- light saber
-- neo button
-- grid layout
-- modern css
-- horizontal media scroll
-- particles background
-- fireworks
-- card stack
-- diagram land page
-- animated flag
-- lazy load image
-- dotted image
-- laser
+- Light saber
+- Neo button
+- Grid layout
+- Modern CSS
+- Horizontal media scroll
+- Particles background
+- Fireworks
+- Card stack
+- Diagram land page
+- Animated flag
+- Lazy load image
+- Dotted image
+- Laser
+- CSS scroll animation
+- Pick list
+

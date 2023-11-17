@@ -27,10 +27,10 @@ class Flag {
     }
   }
 
-  #generateChain({ xnums, left, sep, top }, fixedParticleLines = false) {
+  #generateChain({ xnums: enums, left, sep, top }, fixedParticleLines = false) {
     const particles = []
     const segments = []
-    for (let i = 0; i < xnums; i++) {
+    for (let i = 0; i < enums; i++) {
       const x = left + i * sep
       const y = top
       const fixedParticles = (i === 0) && fixedParticleLines
