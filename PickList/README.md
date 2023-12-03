@@ -7,5 +7,4 @@
     - `@layer layer_name { ... }`
     - nesting layers
 - open-props
-
     - syntax ```@import "https://unpkg.com/open-props" layer(design.system);```

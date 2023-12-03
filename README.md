@@ -14,6 +14,5 @@ Cool effects
 - Lazy load image
 - Dotted image
 - Laser
-- CSS scroll animation
 - Pick list
-
+- Parallax

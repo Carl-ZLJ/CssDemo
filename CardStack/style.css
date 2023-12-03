@@ -1,6 +1,7 @@
 @import "https://unpkg.com/open-props" layer(design.system);
-
 @import "https://unpkg.com/open-props/normalize.min.css" layer(demo.support);
+
+
 @import "card-stack.css" layer(demo);
 
 @layer design.system,
@@ -61,23 +62,5 @@ demo.support, demo;
   input[type="radio"] {
     inline-size: auto;
     block-size: auto;
-  }
-}
-
-@keyframes octocat-wave {
-
-  0%,
-  100% {
-    transform: rotate(0)
-  }
-
-  20%,
-  60% {
-    transform: rotate(-25deg)
-  }
-
-  40%,
-  80% {
-    transform: rotate(10deg)
   }
 }
